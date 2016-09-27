@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天气预报</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style media="screen">
+    html,body {
+        height: 100%;
+    }
+    body {
+        text-align: center;
+        background-image: url('1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <h1 style="color:white;">天气预报</h1>
+    <p style="color:white;">
+        请输入查询的城市名:
+        <input type="text" class="form-group" placeholder="例如:北京" id="cityname" value="北京">
+        <a href="javascript:void(0)" class="btn btn-danger" onclick="doSearch()">查询</a>
+    </p>
+    <table class="table table-hover">
+        <thead>
+            <tr class="warning">
+                <th>Date</th>
+                <th>Wind Power</th>
+                <th>Wind Direction</th>
+                <th>Hightemp</th>
+                <th>Lowtemp</th>
+                <th>Type</th>
+                <th>Week</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+    </table>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
