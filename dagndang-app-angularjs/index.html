@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <div class="weui_tab" ng-app='app' ng-controller='mainController'>
-        <div class="weui_tab_bd">
+    <div ng-app='app' ng-controller='mainController'>
+        <div class="page__bd">
+            <div ng-view>
+            </div>
             <div class="weui-tabbar">
-              <div ng-view>
-              </div>
-                <a href="#" class="weui-tabbar__item weui_bar_item_on">
+                <a href="#/" class="weui-tabbar__item weui_bar_item_on">
                     <img src="./assets/images/icon_nav_search_bar.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">首页</p>
                 </a>
