@@ -3,7 +3,7 @@ app.factory('commonService',['$http',function ($http) {
 
   service.getData = function (type ,callBack) {
     $http({
-      url:'/dagndang-app-angularjs/data/'+type+'.json',
+      url:'/Lost-sheep.github.my/dagndang-app-angularjs/data/'+type+'.json',
       method:'get'
     })
     .then(function (res) {
