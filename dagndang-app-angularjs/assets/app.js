@@ -18,7 +18,7 @@ app.config(['$routeProvider', function($routeProvider) {
             controller: ''
         })
         .when('/dangdangbook/:id', {
-            templateUrl: './assets/tpl/Dangdangbook/dangdangbook.html',
+            templateUrl: './assets/tpl/DangdangBook/dangdangbook.html',
             controller: 'booklistController'
         })
         .otherwise({
