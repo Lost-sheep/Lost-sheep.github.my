@@ -24,6 +24,7 @@
 </body>
 
 </html>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260658769'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260658769%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
 <script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("allmap"); // 创建Map实例
@@ -48,21 +49,4 @@
 	}, {
 		enableHighAccuracy: true
 	})
-
-
-
-	function success(pos) {
-		var crd = pos.coords;
-
-		console.log('Your current position is:');
-		console.log('Latitude : ' + crd.latitude);
-		console.log('Longitude: ' + crd.longitude);
-		console.log('More or less ' + crd.accuracy + ' meters.');
-	};
-
-	function error(err) {
-		console.warn('ERROR(' + err.code + '): ' + err.message);
-	};
-
-	navigator.geolocation.getCurrentPosition(success, error);
 </script>
